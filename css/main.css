@@ -1,0 +1,272 @@
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+  height: 100%;
+    min-height: 100%;
+    <!--background-color: #000000;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+
+.cl-effect-11 a {
+    padding: 10px 0;
+    border-top: 2px solid #0972b4;
+    color: #0972b4;
+    text-shadow: none;
+} 
+
+.cl-effect-11 a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 15px 0;
+    margin-left: 15px;
+    max-width: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+    white-space: nowrap;
+}
+
+.cl-effect-11 a:hover::before,
+.cl-effect-11 a:focus::before {
+    max-width: 100%;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+#name {
+    font-family: 'Raleway', sans-serif;
+     mouseover: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: left;
+    color: #ccc;
+    top: 8px;
+    margin-top: 20px;
+    padding: 16 16px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.35em;
+    position: relative;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body, html {
+	height: 100%;
+	min-height: 100%;
+	background-color: #000000;
+}
+
+.no-js {
+	padding-top: 106px;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+.loading {
+	background: url('../img/ico_loading.gif') no-repeat center center;
+}
+
+section {
+	min-width: 960px;
+	opacity: 0;
+}
+
+.loaded section,
+.no-js section {
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
+}
+
+main {
+	overflow-x: hidden;
+}
+
+#preload {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.hsContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.hsContent {
+	max-width: 700px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+	.hsContent h2  {
+		color: #fff8de;
+		background-color: rgba(0,0,0,0.5);
+		padding: 10px 5px;
+		font-size: 35px;
+		line-height: 38px;
+		margin-bottom: 12px;
+	}
+	.hsContent p {
+		width: 400px;
+		color: #b2b2b2;
+	}
+	.hsContent a {
+		color: #b2b2b2;
+		text-decoration: underline;
+	}
+
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
+#slide-1 .hsContent {
+	bottom: 200px;
+	top: auto;
+}
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
+#slide-2 .hsContent {
+	margin-left: -450px;
+	bottom: 200px;
+	top: auto;
+}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
+#slide-3 .hsContent {
+	margin-left: -239px;
+}
+	#slide-3 h2 {
+		color: #f2ead6;
+		background-color: rgba(0,0,0,0.6);
+	}
+
+/* Slide 4 */
+#slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
+#slide-4 .hsContent {
+	margin-left: -450px;
+}
+	#slide-4 h2 {
+		background: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+
+    h3 {
+        page-break-after: avoid;
+    }
+}
