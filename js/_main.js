@@ -1,31 +1,32 @@
 (function ($) {
 	$(document).ready(function(){
 
-	// hide .navbar first
+		//var newMargin = ($(window).height()) / 2;
+		//$("#logoCenter").css("margin-top", "1000px");
 
-	$.fn.scrollView = function () {
-		return this.each(function () {
-			$('html, body').animate({
-				scrollTop: $(this).offset().top
-			}, 1000);
+		$.fn.scrollView = function () {
+			return this.each(function () {
+				$('html, body').animate({
+					scrollTop: $(this).offset().top
+				}, 1000);
+			});
+		}
+
+		$("#homeLink").click( function() {
+			$('#homeScreen').scrollView();
 		});
-	}
+		$("#aboutLink").click(function() {
+			$('#aboutScreen').scrollView();
+		});
+		$("#portfolioLink").click( function() {
+			$('#portfolioScreen').scrollView();
+		});
+		$("#contactLink").click( function() {
+			$('#contactScreen').scrollView();
+		});
 
-	$("#homeLink").click( function() {
-		$('#homeScreen').scrollView();
-	});
-	$("#aboutLink").click(function() {
-		$('#aboutScreen').scrollView();
-	});
-	$("#portfolioLink").click( function() {
-		$('#portfolioScreen').scrollView();
-	});
-	$("#contactLink").click( function() {
-		$('#contactScreen').scrollView();
-	});
+		$(".navbar").hide();
 
-	$(".navbar").hide();
-	
 	// fade in .navbar
 	$(function () {
 		$(window).scroll(function () {
