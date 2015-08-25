@@ -7,7 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/buttons.css">
 		<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<script src="js/vendor/modernizr-2.7.1.min.js"></script>
 	</head>
 
@@ -48,13 +51,41 @@
 				</div>
 			</nav>
 
-			<!--<a name = "Home">-->
 			<section id="slide-1" class="homeSlide">
 				<div class="bcg" id = "homeScreen">
+					<div class = "logoCenter">
 						<center>
-						<span class="helper"></span>
-							<img src = "img/WebsiteLogo.png" id = "logoCenter"></img>
+							<div class = "home-introduction">
+								<h2 class="homeName">Erika Schwartz</h2>
+								<hr>
+								<ul class="list-inline">
+									<li>
+										<a href="https://www.linkedin.com/in/erikalschwartz" class="btn-link btn-outline" id ="media-links">
+											<i class ="fa fa-fw fa-linkedin"></i>
+										</a>
+										<p>LinkedIn</p>
+									</li>
+									<li>
+										<a href="https://www.github.com/erschwartz" class="btn-link btn-outline" id = "media-links">
+											<i class="fa fa-fw fa-github"></i>
+										</a>
+										<p>Github</p>
+									</li>
+									<li>
+										<a href="mailto:eleigh@bu.edu" class="btn-link btn-outline" id = "media-links">
+											<i class="fa fa-fq fa-envelope"></i>
+										</a>
+										<p>Email</p>
+									</li>
+								</ul>
+							</div>
+							<span id = "scrollTopButton">
+								<button type="button" class="btn btn-circle btn-default" id="scrollDown">
+									<span class="glyphicon glyphicon-menu-down scroll-arrow" aria-hidden="true"></span>
+								</button>
+							</span>
 						</center>
+					</div>
 				</div>
 			</section>
 
@@ -99,6 +130,5 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	<script src="js/imagesloaded.js"></script>
-	<script src="js/skrollr.js"></script>
 	<script src="js/_main.js"></script>
 	</html>
