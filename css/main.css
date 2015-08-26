@@ -17,7 +17,7 @@ body {
 p {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    color: #2c3e50;
+    color: #fff;
 }
 
 ::-moz-selection {
@@ -68,12 +68,12 @@ hr {
 }
 
 .scroll-arrow {
-    color: rgb(41, 206, 255);
+    color: #7e4b4a;
 }
 
 .home-introduction {
     display: inline-block;
-    background-color: rgb(41, 206, 255);
+    background-color: #7e4b4a;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
@@ -129,6 +129,7 @@ nav a:focus {
     color: rgb(41, 206, 255);
     text-shadow: none;
 } 
+
 
 .cl-effect-11 a::before {
     position: absolute;
@@ -279,7 +280,14 @@ section {
 }
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
+#slide-1 .bcg {
+    background: url('../img/bcg_slide-1.jpg') no-repeat bottom center scroll;
+    background-color: #e0e2df
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 #slide-1 .hsContent {
 	bottom: 200px;
 	top: auto;

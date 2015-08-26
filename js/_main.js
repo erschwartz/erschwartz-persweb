@@ -1,6 +1,6 @@
 
 (function ($) {
-	$(document).ready(function(){
+	$(document).ready(function() {
 
 		$.fn.scrollView = function () {
 			return this.each(function () {
@@ -24,6 +24,11 @@
 		});
 		$("#scrollDown").click(function() {
 			$('#aboutScreen').scrollView();
+		});
+		$("#scrollDown").hover( function() {
+			$(this).toggleClass("animated");
+			$(this).toggleClass("infinite");
+			$(this).toggleClass("pulse");
 		});
 
 		$(".navbar").hide();
