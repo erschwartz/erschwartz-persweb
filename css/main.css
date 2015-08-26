@@ -314,7 +314,73 @@ body, html {
 
 .about-section p {
     font-family: "HelveticaNeue-Light", "Helvetica", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+}
+
+.portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+.portfolio-header {
+    margin-top: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #534f5d;
+    font-size: 40px;
+    text-shadow: 0 0 1px rgba(0,0,0,0.9);
+}
+
+.portfolio-section {
+    display: inline-block;
+    background-color: #7e4b4a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 75%;
+}
+
+.portfolio-section li {
+    width: 50%;
+    color: white;
+    font-family: "Lato",sans-serif;
+    font-size: 30px;
+    margin-left: 0px;
+}
+
+.portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(81, 72, 72,0.8);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+.portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+.portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.portfolio-link .caption .caption-content i {
+    margin-top: -12px;
 }
 
 .homeName {
@@ -390,7 +456,6 @@ section {
   text-decoration: underline;
 }
 
-/* Slide 1 */
 #slide-1 .bcg {
     background: url('../img/bcg_slide-1.jpg') no-repeat bottom center scroll;
     background-color: #e0e2df
@@ -399,47 +464,60 @@ section {
     background-size: cover;
     -o-background-size: cover;
 }
-#slide-1 .hsContent {
-	bottom: 200px;
-	top: auto;
-    margin-left: -100px;
-}
 
-/* Slide 2 */
 #slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
-#slide-2 .hsContent {
-	margin-left: -450px;
-	bottom: 200px;
-	top: auto;
+
+#slide-3 .bcg {background: url('../img/bcg_slide-3.jpg') no-repeat top center scroll;
+background-color: #e0e2df;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
 }
 
-/* Slide 3 */
-#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
-#slide-3 .hsContent {
-	margin-left: -239px;
-}
-#slide-3 h2 {
-  color: #f2ead6;
-  background-color: rgba(0,0,0,0.6);
+
+.portfolio-modal .modal-content {
+    padding: 5px 0;
+    min-height: 100%;
+    min-width: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
-/* Slide 4 */
-#slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
-#slide-4 .hsContent {
-	margin-left: -450px;
-}
-#slide-4 h2 {
-  background: none;
-  padding-left: 0;
-  padding-right: 0;
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+    font-family: "Montserrat","Helvetica",sans-serif;
+  font-weight: 400;
 }
 
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+.modal-p {
+    color: #2c2c2c;
+    font-family: "HelveticaNeue-Light", "Helvetica", sans-serif;
+    font-size: 12px;
+}
 
 .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
-    /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
 
@@ -448,9 +526,4 @@ section {
     display: block;
     width: 0;
     height: 150%;
-}
-
-
-h3 {
-    page-break-after: avoid;
 }

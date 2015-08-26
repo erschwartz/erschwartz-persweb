@@ -14,6 +14,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 		<script src="js/vendor/modernizr-2.7.1.min.js"></script>
+
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 
 
@@ -23,8 +26,6 @@
 			<img src="img/bcg_slide-1.jpg">
 			<img src="img/bcg_slide-2.jpg">
 			<img src="img/bcg_slide-3.jpg">
-			<img src="img/bcg_slide-4.jpg">
-			<img src="img/WebsiteLogo.png">
 		</div>
 
 		<main>
@@ -44,9 +45,6 @@
 							</li>
 							<li>
 								<a href="#" data-hover="Portfolio" id = "portfolioLink">Portfolio</a>
-							</li>
-							<li>
-								<a href="#" data-hover="Contact" id = "contactLink">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -91,12 +89,11 @@
 				</div>
 			</section>
 
-			<!--<a name = "About">-->
 			<section id="slide-2" class="homeSlide">
 				<div class="bcg" id = "aboutScreen">
 					<div class="logoCenter">
 						<center>
-							<h2 class="about-header">About</h2>
+							<h2 class="about-header">ABOUT</h2>
 							<br>
 							<ul class="about-section list-inline">
 								<li id = "about-programming">
@@ -123,28 +120,84 @@
 				</div>
 			</section>
 
-			<!--<a name = "Portfolio">-->
 			<section id="slide-3" class="homeSlide">
 				<div class="bcg" id = "portfolioScreen">
-					<div class="hsContainer">
-						<div class="hsContent">
-							<h2>H2</h2>
-						</div>
+					<div class="logoCenter">
+						<center>
+							<h2 class = "portfolio-header">PORTFOLIO</h2>
+							<ul class = "portfolio-section list-inline">
+								<li class="col-sm-6 portfolio-item">
+										<a class="portfolio-link" data-toggle="modal" data-target="#FQF">
+											<div class="caption">
+												<div class="caption-content">
+													<p> <b> French Quarter Fest </b> </p>
+													<i class="fa fa-expand fa-1x"></i>
+												</div>
+											</div>
+											<img src="img/FQFThumbnails.png" class="img-responsive" alt="">
+										</a>
+								</li>
+								<li class = "col-sm-6 portfolio-item">
+									<a class="portfolio-link" data-toggle="modal" data-target="#DropIn">
+										<div class="caption">
+											<div class="caption-content">
+												<p> <b> DropIn </b> </p>
+												<i class="fa fa-expand fa-1x"></i>
+											</div>
+										</div>
+										<img src="img/DropInThumbnails.png" class="img-responsive" alt="">
+									</a>
+								</li>
+							</ul>
+						</center>
 					</div>
-
 				</div>
 			</section>
 
-			<!--<a name = "Contact">-->
-			<section id="slide-4" class="homeSlide">
-				<div class="bcg" id = "contactScreen">
-					<div class="hsContainer">
-						<div class="hsContent">
-							<h2>H2</h2>
+
+
+			<div class="portfolio-modal modal fade" id="FQF" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal-body">
+									<h2>French Quarter Festival</h2>
+									<br>
+									<center><img width="640" height="360" src="img/FQFThumbnails.png" class="img-responsive" alt=""></center>
+									<p class="modal-p">The French Quarter Festival is the world's largest free music festival located in New Orleans, Louisiana. The number of participants is generally around 750,000. While in the app store, this app had over 20,000 downloads and had over a 4 star rating.
+									<br>
+									This application was constructed in a six person team in Xcode utilizing Swift, Objective-C, HTML, and CSS. We also used Parse and SQLite in order to construct our database and AppleMaps to fuel the newly added Map feature of our map. Moreover, we used various CocoaPods in order to achieve tasks such as parsing through JSON or completing UI testing.</p>
+									<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+
+			<div class="portfolio-modal modal fade" id="DropIn" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal-body">
+									<h2>DropIn</h2>
+									<br>
+									<center><img width="640" height="360" src="img/DropInThumbnails.png" class="img-responsive" alt=""></center>
+									<p class="modal-p">
+									DropIn is an application focused on promoting water sustainability. DropIn encourages its users to find tap water in their area rather than use water bottles. It shows public water fountains across the country and also allows users to add new locations and rate current locations. Also, information from BeCause Water, such as blog posts and merchandise, is also available on the application.
+									<br>
+									The DropIn application is both an iOS and Android application, and there is a webapp version available on dropinapp.org. My primary responsibility was working on the iOS application. I first redid the entire UI of the application to better resemble Apple standards, and moved the maps portion of the project onto the Native Apple Maps. I dealt with the database in MySQL and PHP in order to allow users to store their profile information when they logged in. Moreover, I added in ApplePay so that users were able to buy items from BeCause Water directly from the application. 
+									<br>
+									</p>
+									<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</main>
 
