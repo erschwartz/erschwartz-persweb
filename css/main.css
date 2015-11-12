@@ -457,7 +457,7 @@ section {
 }
 
 #slide-1 .bcg {
-    background: url('../img/bcg_slide-1.jpg') no-repeat bottom center scroll;
+    background: url('../img/bcgslide-1.jpg') no-repeat bottom center scroll;
     background-color: #e0e2df
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -465,9 +465,9 @@ section {
     -o-background-size: cover;
 }
 
-#slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
+#slide-2 .bcg {background-image:url('../img/bcgslide-2.jpg')}
 
-#slide-3 .bcg {background: url('../img/bcg_slide-3.jpg') no-repeat top center scroll;
+#slide-3 .bcg {background: url('../img/bcgslide-3.jpg') no-repeat top center scroll;
 background-color: #e0e2df;
 -webkit-background-size: cover;
 -moz-background-size: cover;
