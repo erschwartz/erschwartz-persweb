@@ -10,7 +10,6 @@
 		<link rel="stylesheet" href="css/buttons.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 		<script src="js/vendor/modernizr-2.7.1.min.js"></script>
@@ -197,6 +196,18 @@
 										<img src="img/instagramDataPreview.png" class="img-responsive" alt="">
 									</a>
 								</li>
+								<br>
+								<li class = "col-sm-6 portfolio-item">
+									<a class="portfolio-link" data-toggle="modal" data-target="#World">
+										<div class="caption">
+											<div class="caption-content">
+												<p> <b> World of News </b> </p>
+												<i class="fa fa-expand fa-1x"></i>
+											</div>
+										</div>
+										<img src="img/worldOfNews.png" class="img-responsive" alt="">
+									</a>
+								</li>
 							</ul>
 						</center>
 					</div>
@@ -345,6 +356,31 @@
 				</div>
 			</div>
 
+			<div class="portfolio-modal modal fade" id="World" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal-body">
+									<h2>World of News</h2>
+									<br>
+									<center><img width="640" height="360" src="img/worldOfNews.png" class="img-responsive" alt=""></center>
+									<p class="modal-p">
+									World of News is a modern news browser for those whom are interested in obtaining an unbiased or different view of news from news sources around the globe. Simply search for a news item, and World of News will generate news results on a map and on a list for the user to scroll through and view. Users are able to zoom into certain locations on the map and regenerate their results based off of the maps' current boundaries.
+									<br>
+									World of News was built using HTML, CSS (Bootstrap), Javascript (jQuery, animate.js), the Google Maps API, and the old Google News API. 
+									<br>
+									World of News won second place at WHack in 2015.
+									<br>
+									</p>
+									<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 
 
 		</main>
@@ -354,5 +390,5 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	<script src="js/imagesloaded.js"></script>
-	<script src="js/_main.js"></script>
+	<script src="js/main.js"></script>
 	</html>
